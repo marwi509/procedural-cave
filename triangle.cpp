@@ -151,7 +151,7 @@ int main(int argc, char** argv)
 	/* Starta GLFW och GLEW */
 	
 	glfwInit();
-	window = glfwCreateWindow(2560, 1440, "My Title", glfwGetPrimaryMonitor(), NULL);
+	window = glfwCreateWindow(1024, 600, "My Title", NULL, NULL);
 	if( !window)
     {
 		std::cout << "EXITING" << std::endl;
@@ -160,7 +160,7 @@ int main(int argc, char** argv)
     }
     
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwMakeContextCurrent(window);
 	
